@@ -20,14 +20,16 @@ analytics.page()
     
     <script type="text/javascript">
       analytics.ready(function() {
-       var user = user.traits();
-       if (user.traits.source == nul) {
+        var user = analytics.user(); 
+        var id = user.id(); 
+        var traits = user.traits();
+        if (user.traits.source == nul) {
         analytics.identify("1234", {
           source: "google"
-        });
-      };
+          });
+        };
        });
-      
+      analytics.ready();
 
     </script>
   
