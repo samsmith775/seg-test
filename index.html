@@ -18,14 +18,20 @@ analytics.page()
     <a class="button-two" title="Don't Click me" href="#"   onclick="analytics.track('click',{title: 'dont click me'});">Don't click Me</a>
     <a class="button-three" title="NEVER Click me" href="#" onclick="analytics.track('click',{title: 'never click me'});">I dare you to click me</a>
     
-    <form onsubmit="analytics.identify({firstname: firstname, lastname: lastname});">
-        First name:<br>
-        <input type="text" name="firstname" value="Mickey"><br>
-        Last name:<br>
-        <input type="text" name="lastname" value="Mouse">
-        <br><br>
-        <input type="submit" value="Submit">
-    </form> 
+    <script type="text/javascript">
+      analytics.ready(function() {
+        var user = analytics.user(); 
+        var id = user.id(); 
+        var traits = user.traits(); 
+       });
+      
+      if (traits.source == nul) {
+        analytics.identify("1234", {
+          source: "google"
+        });
+      };
+
+    </script>
   
   </body>
 </html>
