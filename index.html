@@ -23,7 +23,7 @@ analytics.page()
         var user = analytics.user(); 
         var id = user.id(); 
         var traits = user.traits();
-        if (user.traits.source == null) {
+        if (user.traits.source == "bing") {
         analytics.identify("1234", {
           source: "bing"
           });
