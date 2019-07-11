@@ -6,32 +6,15 @@
     <link rel = "stylesheet"
           type = "text/css"
           href = "style.css" />
-<script type="text/javascript"> 
-!function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.1.0"; 
-analytics.load("RWUYmwYSVHUemjLTnRmUhswGEphadoT7"); 
-analytics.page() 
-}}(); 
+<script>
+  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
+  analytics.load("47xD4AZ4sgr7Ty9XO8a00GunvjILFJ69");
+
+  }}();
 </script>
   </head>
   <body>
-    <a class="button-one" title="Click me" href="#"         onclick="analytics.track('click',{title: 'click me'});">Click Me</a>
-    <a class="button-two" title="Don't Click me" href="#"   onclick="analytics.track('click',{title: 'dont click me'});">Don't click Me</a>
-    <a class="button-three" title="NEVER Click me" href="#" onclick="analytics.track('click',{title: 'never click me'});">I dare you to click me</a>
-    
- <!--   <script type="text/javascript">
-      analytics.ready(function() {
-        var user = analytics.user(); 
-        var id = user.id(); 
-        var traits = user.traits();
-        if (user.traits.source == "bing") {
-        analytics.identify("1234", {
-          source: "bing"
-          });
-        };
-       });
-      analytics.ready();
-
-    </script> -->
+    <a>New Page!</a>
   
   </body>
 </html>
