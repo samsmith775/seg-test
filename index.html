@@ -11,10 +11,16 @@
   analytics.load("RWUYmwYSVHUemjLTnRmUhswGEphadoT7");
   analytics.page();
   }}();
+  
+  analytics.ready(function() {  
+  var DL = google_tag_manager.datalayer;
+  // Do something with the anonId  
+  console.log(DL);   
+});
 </script>
   </head>
   <body>
-    <a>this is a cool website 5!</a>
+    <a>this website is dope</a>
   
   </body>
 </html>
