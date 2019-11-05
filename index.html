@@ -14,14 +14,20 @@
 </script>
   </head>
   <body>
-  <form onsubmit="myFunction()">
+  <form onsubmit="myidentify()">
     Enter name: <input type="text" name="fname">
-    <input type="submit" value="Submit">
+    <input type="submit" value="Identify">
+  </form>
+  <form onsubmit="mytrack()">
+    <input type="submit" value="Track">
   </form>
 
   <script>
-  function myFunction() {
+  function myidentify() {
     analytics.identify('12345');
+  }
+  function mytrack() {
+    analytics.track();
   }
   </script>
 
